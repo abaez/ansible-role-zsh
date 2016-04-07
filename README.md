@@ -3,32 +3,27 @@ Role Name
 [![license][2i]][2p]
 [![twitter][3i]][3p]
 
-A brief description of the role goes here.
+Install zsh with [oh-my-zsh][4]
 
 Description
 -----------
 
-Give a description
+Nothing too fancy. I tend to use zsh for **everything** under the sun. As such, the first darn thing to install on my provisions is usually that with a small update to the plugins I use. This is just that.
 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
-
-Requirements
-------------
-
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+The only variable that needs to be changed is in `vars/main.yml`; **user.home**. It will install the [oh-my-zsh][4] in the userhome.
 
 Usage
 -----
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+Very simple to use. Simply change the role variable listed above and add to your playbook:
 
 ``` yaml
 - hosts: servers
     roles:
-        - { role: username.rolename, x: 42 }
+        - zsh
 ```
 
 Author Information
@@ -41,3 +36,4 @@ Author Information
 [2p]: ./LICENSE
 [3i]: https://img.shields.io/badge/twitter-a_baez-blue.svg
 [3p]: https://twitter.com/a_baez
+[4]: https://github.com/robbyrussell/oh-my-zsh
