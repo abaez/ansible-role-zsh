@@ -13,7 +13,7 @@ Nothing too fancy. I tend to use zsh for **everything** under the sun. As such, 
 Role Variables
 --------------
 
-The only variable that needs to be changed is in `vars/main.yml`; **user.home**. It will install the [oh-my-zsh][4] in the userhome.
+The only variable that needs to be changed is in `defaults/main.yml`; **user.home**. It will install the [oh-my-zsh][4] in the userhome.
 
 Usage
 -----
